@@ -1,0 +1,29 @@
+
+       <script   src="https://code.jquery.com/jquery-1.7.2.min.js"   integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ="   crossorigin="anonymous"></script>
+      
+
+        
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+
+<iframe id="vimeo-player" src="http://player.vimeo.com/video/40977539?api=1" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+<a id="stop" href="#">STOP</a>
+<a id="play" href="#">PLAY</a>
+
+
+<script type="text/javascript">
+    var iframe = $('#vimeo-player')[0];
+var player = $f(iframe);
+
+$('#stop').click(function() {
+  alert('stoped');
+  player.api('pause');
+});
+
+
+$('#play').click(function() {
+  alert('play');
+  player.api('play');
+})
+
+</script>

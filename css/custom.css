@@ -1,0 +1,383 @@
+
+@media (max-width: 768px) {
+    .pull-right {
+     float: right;
+    margin-right: 48px; /*set margin this way in your custom styesheet*/
+  }
+}
+
+@media (max-width: 1250px) { /*Smaller than 1250px*/
+    .videoWrapper {
+    position: relative;
+   padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    
+    
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+}
+
+@media (min-width: 1250px) {/*bigger than 1250px*/
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 650px; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    min-width: 700px
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 700px !important;
+}
+}
+
+
+
+.navbar-inverse {
+
+    background-color: #27ae60;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.circle {
+    font-weight: bold;
+}
+
+
+
+.margin {
+    margin-top: 0px;
+}
+
+.grey {
+    background-color: #f5f5f5;
+    margin-bottom: 0px !important;
+    color: #27ae60;
+}
+
+
+
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  padding-left: 10px;
+  width: auto;
+}
+
+
+
+
+
+
+
+/*************************
+EXAMPLES 2-7 BELOW 
+**************************/
+
+/* EXAMPLE 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
+  width: 70px;
+}
+
+
+
+
+
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+      -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+    top: 50%;
+    display: block;
+    position: relative;
+    height: auto;
+    transform: translate(0,-50%);
+    margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+
+
+
+.navbar-nav>li>.dropdown-menu {
+    z-index: 9999;
+}
+
+.keytopic {
+
+  background-image: url("img/blue.jpg")
+}
+
+.menu-divider {
+  margin: 0px;
+}
+
+/*************************
+Key Topic Sections
+**************************/
+
+.keytopic-section {
+  background-color: #1abc9c;
+  
+  height: auto;
+  padding: 10px;
+  border: 3px solid white;
+    transition: all 0.5s ease;
+ 
+
+}
+
+.keytopic-section:hover {
+
+  color: green !important;
+    transition: all 0.5s ease;
+  
+
+}
+
+
+
+#section1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../img/1.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+
+#section2 {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/2.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+#section3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../img/3.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+
+#section1-summary {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../img/effective-summary.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+
+#section2-summary  {
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/conflict-summary.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+#section3-summary  {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../img/behavior-summary.png");
+   background-size: 100% 100%;
+   background-size: cover;
+}
+
+
+
+.keytopic-title {
+  color: white;
+  font-size: 21px;
+}
+
+.keytopic-description{
+  color: white;
+}
+
+.btn-group {
+
+  text-align: center;
+}
+.modal-header {
+  text-align: center;
+}
+
+
+
+@media only screen and (min-width : 768px) {
+  .is-table-row {
+    display: table;
+  }
+  .is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.is-table-row .box {
+  background: none;
+  position: static;
+}
+.is-table-row [class*="col-"] {
+  background: #fff;
+}
+
+@media only screen and (min-width : 768px) {
+  .is-table-row {
+    display: table;
+  }
+  .is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.is-table-row .box {
+  background: none;
+  position: static;
+}
+.is-table-row [class*="col-"] {
+  background: #fff;
+}
+
+
+
+
+.box {
+    padding: 55px 7% 0;
+    text-align: center;
+    position: relative;
+    
+}
+
+
+.box h2 {
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    margin-bottom: 15px;
+}
+.box a {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 25px 0;
+}
+.box p {
+    padding-bottom: 60px;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.legend {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.legend span {
+    display: block;
+    padding: 3px 5px;
+    line-height: 100%;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 800px;
+    margin: 30px auto;
+  }
+}
+  .modal-footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.active-menu {
+  background-color: #27ae60;
+  color: white !important;
+}
+
+
+
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: #006633 !important;
+}
+
+/*Probletmea Behvoiro Section*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+background-color: #27ae60;
+}
+
+.badge {
+  background-color: #555;
+}
+
+.problem-image {
+float:left;  
+max-width: 140px;
+margin-right: 20px;
+margin-bottom: 20px;
+
+}
+
+.button-link {
+  padding: 0px !important;
+}
+
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  color: #555;
+}
+
+a:hover, a:focus {
+ color: #27ae60;
+}
+
+.leverage {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,111111+46,111111+76 */
+background: #4c4c4c; /* Old browsers */
+background: -moz-linear-gradient(top,  #4c4c4c 0%, #111111 46%, #111111 76%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4c4c4c 0%,#111111 46%,#111111 76%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4c4c4c 0%,#111111 46%,#111111 76%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#111111',GradientType=0 ); /* IE6-9 */
+}
